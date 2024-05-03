@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ukulele</title>
+    <style>
+      .container {
+        background-color: #f2f2f2;
+        color: rgb(5, 69, 76);
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 20px 40px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 15px;
+      }
+
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(0, 0, 0) 11.2%,
+          rgb(11, 132, 145) 91.1%
+        );
+        background-attachment: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        line-height: 25px;
+      }
+
+      img {
+        width: 300px;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(11, 132, 145);
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      button {
+        display: block;
+        margin: 30px auto;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+        background-color: rgb(5, 69, 76);
+        color: #f2f2f2;
+        border-radius: 10px;
+        border: 1px solid rgb(5, 69, 76);
+      }
+      button:hover {
+        border: 1px solid rgb(5, 69, 76);
+        color: rgb(5, 69, 76);
+        background-color: #f2f2f2;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      span {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ukulele</h1>
+      <hr />
+      <h2>Lessons for beginners and advanced</h2>
+      <hr />
+      <img
+        src="https://cdn.laboitenoiredumusicien.com/pub/produits/produits/lag/GLU-U77S-B.png"
+        alt="ukulele"
+      />
+      <p>
+        The <strong>ukulele</strong>, also called a uke, is a member of the lute
+        family of instruments of Portuguese origin and popularized in Hawaii. It
+        generally employs four nylon strings. The tone and volume of the
+        instrument vary with size and construction. Ukuleles commonly come in
+        four sizes: soprano, concert, tenor, and baritone.<br />
+        <a href="https://en.wikipedia.org/wiki/Ukulele" target="_blank"
+          >Read more on wikipedia</a
+        >
+      </p>
+      <button>I want to learn ukulele</button>
+      <span>Created by <em>Johanna</em></span>
+    </div>
+  </body>
+  <script>
+    function contact() {
+      let name = prompt("What is your name?");
+      let uku = prompt("Do you already have an ukulele?");
+      uku = uku.toLowerCase();
+      if (uku === "no") {
+        alert(
+          "Thanks " +
+            name +
+            ", we'll get back to you with more information about the courses. You can also borrow an ukulele from us. "
+        );
+      } else
+        alert(
+          "Thanks " +
+            name +
+            ", we'll get back to you with more information about the courses."
+        );
+    }
+
+    let button = document.querySelector("button");
+    button.addEventListener("click", contact);
+  </script>
+</html>
